@@ -1,0 +1,65 @@
+
+<html>
+<head>
+
+    <style>
+        /* ID selector: selects the element with id="demo" */
+        #demo {
+            color: rgba(0, 255, 42, 0.47);
+        }
+
+        /* Class selector: selects elements with class="test" */
+        .test {
+            color: rgb(196, 0, 0);
+        }
+
+        /* Element selector: selects ALL <p> elements */
+        p {
+            color: pink;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--
+        This paragraph has BOTH:
+        class="test" and id="demo"
+
+        ID (#demo) is more specific than class (.test),
+        so the ID color wins: rgb(255, 0, 85)
+    -->
+    <p class="test" id="demo">
+        hello world
+    </p>
+
+
+    <!--
+        This paragraph has:
+        id="demo"
+        class="test"
+        inline style="color: pink"
+
+        Inline CSS has higher priority than
+        ID, class, and element selectors,
+        so this becomes PINK.
+        
+        NOTE: An id should normally be unique,
+        so using id="demo" again is not recommended.
+    -->
+    <p class="test" style="color: pink;">
+        hello world
+    </p>
+
+
+    <!--
+        This is just normal text.`
+        It isn't inside a <p>, so the p { color: pink; }
+        rule does NOT affect it.
+    -->
+    random cheezein
+
+</body>
+</html>
+

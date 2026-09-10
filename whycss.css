@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(235, 162, 168);
+    font-family: Arial, ;
+    color: #3b4d2f;
+    margin: 40px;
+}
+
+h1 {
+    color: #a52a52;
+    
+    font-size: 40px;
+    
+}
+
+h2 {
+    color: #4d733c;
+    font-size: 30px;
+    
+}
+
+.p1 {
+    background-color: #f378bc;
+    font-size: 18px;
+    border-left: 7px solid #e9004e;
+    font-weight:bold;
+    
+}
+.p2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #e99bc6;
+    font-size: 18px;
+    color: #7e0045;
+    border-left: 7px solid #eeeced;
+     font-variant:small-caps;
+    
+}
